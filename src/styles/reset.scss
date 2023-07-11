@@ -1,0 +1,33 @@
+/* Обнуление отступов и отступов внутри элементов */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, pre, div, code, blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Обнуление границ элементов */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Обнуление свойства списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Обнуление стилей ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Обнуление стилей форм */
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
