@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { ThemeContext, Theme, LOKAL_STARAGE_THEME_KEY } from './ThemeContext';
+import { ThemeContext, Theme, LOKAL_STARAGE_THEME_KEY } from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
   children: React.ReactNode;
