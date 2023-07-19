@@ -1,11 +1,10 @@
-import React, { Suspense, useContext } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTheme } from './ThemeProvider/ui';
-import { classNames } from 'helpers/classNames/className';
-import AboutPage from 'pages/AboutPage/ui/AboutPage';
-import MainPage from 'pages/MainPage/ui/MainPage';
+import { classNames } from 'sheared/lib/className';
+import { AppRouter } from './router';
 
-const App = () => {
+const App = () => {   
  
 const[theme, toggleTheme] = useTheme()
   return (
@@ -17,12 +16,8 @@ const[theme, toggleTheme] = useTheme()
       <br />
       <Link to="/">Home</Link>
       
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </Suspense>
+     <AppRouter/>
+
     </div>
   );
 };
