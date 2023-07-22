@@ -46,7 +46,7 @@
 			"prefix": "rc",
 			"body": [
 				"import React from \"react\";",
-				"import cls from \"${TM_FILENAME_BASE}.module.scss\"",
+				"import cls from \"./${TM_FILENAME_BASE}.module.scss\"",
 				"import {classNames} from \"sheared/lib/className\"",
 			  "",
 			  "export interface ${TM_FILENAME_BASE}Props {",
