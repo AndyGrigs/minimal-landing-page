@@ -1,5 +1,4 @@
-import { AboutPage } from 'pages/AboutPage'
-import { MainPage } from 'pages/MainPage'
+
 import React, { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { routeConfig } from 'sheared/config/routeConfig/routeConfig'
@@ -13,9 +12,9 @@ const AppRouter = () => {
             key={path} 
             path={path}
             element={(
-                <>
+                <div className='page-wrapper'>
                     {element}
-                </>
+                </div>
             )}
         />
       ))}
