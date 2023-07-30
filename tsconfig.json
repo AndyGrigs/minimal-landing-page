@@ -9,21 +9,16 @@
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
     "jsx": "react",
-    
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
-    "paths":{
-      "*": ["./src/*"]
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
     },
-    // esModuleInterop позволяет работать с пакетами, которые используют
-    // common js как с обычными пакета с помощью import (require() module.export) = common js
-    // import Moment from 'moment';
-    // без флага esModuleInterop результат undefined
-    // console.log(Moment);
-    // c флагом результат [object Object]
-    // console.log(Moment);
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
