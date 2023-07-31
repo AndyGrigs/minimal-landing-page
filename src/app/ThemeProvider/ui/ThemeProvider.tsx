@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { ThemeContext, Theme, LOKAL_STARAGE_THEME_KEY } from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
@@ -11,7 +11,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const handleSetTheme = (newTheme: Theme) => {
     setTheme(newTheme);
     localStorage.setItem(LOKAL_STARAGE_THEME_KEY, newTheme);
-  };
+  }
 
   useEffect(() => {
     const storedTheme = localStorage.getItem(LOKAL_STARAGE_THEME_KEY);
@@ -27,6 +27,6 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
-};
+}
 
 export default ThemeProvider;

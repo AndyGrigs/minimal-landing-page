@@ -5,17 +5,14 @@ import { AppLink, AppLinkTheme } from 'sheared/ui/AppLink/AppLink';
 import { ThemeSwitcher } from 'sheared/ui/ThemeSwitcher';
 
 interface NavbarProps {
-  className?: string;
+  className?: string
 }
 
-export const Navbar = ({className}: NavbarProps) => {
-
+export const Navbar = ({ className }: NavbarProps) => {
   return (
-    <div className={classNames( cl.Navbar , {}, [className])}>
+    <div className={classNames(cl.Navbar, {}, [className])}>
       <AppLink theme={AppLinkTheme.SECONDARY} to="/about">About</AppLink>
       <AppLink theme={AppLinkTheme.PRIMARY} to="/">Home</AppLink>
     </div>
   )
-}
-
-
+};
