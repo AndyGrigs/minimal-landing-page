@@ -3,9 +3,11 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
+    "parser": '@typescript-eslint/parser',
+    "plugins": ['@typescript-eslint'],
     "extends": [
-        "standard-with-typescript",
-        "plugin:react/recommended"
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-type-checked'
     ],
     "overrides": [
         {
@@ -24,6 +26,11 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module",
         "project": "./tsconfig.json",
+    },
+    "settings": {
+        "react": {
+            "version": "detect",
+        },
     },
     "plugins": [
         "react"
