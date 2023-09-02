@@ -3,6 +3,7 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
+    ignorePatterns: [".eslintrc.js"],
     "parser": '@typescript-eslint/parser',
     "plugins": ['@typescript-eslint'],
     "extends": [
@@ -36,6 +37,10 @@ module.exports = {
         "react"
     ],
     "rules": {
-
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-unsafe-assignment": "warn",
+        "@typescript-eslint/no-unsafe-call": "warn"
     }
 }
