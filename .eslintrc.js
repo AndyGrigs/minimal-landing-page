@@ -5,10 +5,11 @@ module.exports = {
     },
     ignorePatterns: [".eslintrc.js"],
     "parser": '@typescript-eslint/parser',
-    "plugins": ['@typescript-eslint'],
+    "plugins": ['@typescript-eslint', "i18next"],
     "extends": [
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-type-checked'
+        'plugin:@typescript-eslint/recommended-type-checked',
+        "plugin:i18next/recommended"
     ],
     "overrides": [
         {
@@ -37,10 +38,11 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "i18next/no-literal-string": "warn",
         "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/no-floating-promises": "off",
-        "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-unsafe-assignment": "warn",
-        "@typescript-eslint/no-unsafe-call": "warn"
+        "@typescript-eslint/no-unsafe-call": "warn",
+        "i18next/no-literal-string": 2
     }
 }
