@@ -3,9 +3,13 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
+    ignorePatterns: [".eslintrc.js"],
+    "parser": '@typescript-eslint/parser',
+    "plugins": ['@typescript-eslint', "i18next"],
     "extends": [
-        "standard-with-typescript",
-        "plugin:react/recommended"
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-type-checked',
+        "plugin:i18next/recommended"
     ],
     "overrides": [
         {
@@ -25,10 +29,20 @@ module.exports = {
         "sourceType": "module",
         "project": "./tsconfig.json",
     },
+    "settings": {
+        "react": {
+            "version": "detect",
+        },
+    },
     "plugins": [
         "react"
     ],
     "rules": {
-
+        "i18next/no-literal-string": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-unsafe-assignment": "warn",
+        "@typescript-eslint/no-unsafe-call": "warn",
+        "i18next/no-literal-string": 2
     }
 }

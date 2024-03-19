@@ -1,4 +1,6 @@
 {
     "welcome": "¡Bienvenido a mi aplicación!",
-    "greeting": "¡Hola, {{name}}!"
+    "greeting": "¡Hola, {{name}}!",
+    "about": "прло",
+    "home": "hiumbv"
 }
