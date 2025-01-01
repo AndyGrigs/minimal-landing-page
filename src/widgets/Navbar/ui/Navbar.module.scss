@@ -1,6 +1,36 @@
 .Navbar {
-    background-color: var(--inverted-bg-color);
-    padding: .56em;
-    height: var(--navbar-height);
-   
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  
+    &__Logo {
+      width: 100px;
+      height: 14px;
+    }
+  
+    &__Burger {
+      width: 32px;
+      height: 43px;
+    }
+  }
+  
+  /* Tablet and up */
+  @media (min-width: 768px) {
+    .Navbar {
+      padding: 24px;
+    }
+  }
+  
+  /* Desktop and up */
+  @media (min-width: 1024px) {
+    .Navbar {
+      padding: 32px;
+    }
+  
+    .Navbar__Burger {
+      display: none;
+    }
+  }

@@ -1,11 +1,14 @@
 .Sidebar{
-    height: calc( 100vh - var(--navbar-height));
-    width: var(--sidebar-width);
-    background: var(--inverted-secondary-color);
-    position: relative;
-    transition: width 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 .collapsed{
-    width: var(--sidebar-width-collapsed);
+    transform: translateX(0);
 }

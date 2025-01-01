@@ -1,30 +1,30 @@
 @import 'reset';
 @import 'variables/global';
-@import 'themes/dark';
-@import 'themes/normal';
 
-.app {
-    font: var(--font-m);
-    background: var(--bg-color);
+// Змінні для брейкпоінтів
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
 
-    //background: lightblue;
-    color: var(--primary-color);
-    min-height: 100vh;
-}
-
-.content-page{
-    display: flex;
-}
-
-.page-wrapper{
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.switchers{
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+/* Стилі для мобільних пристроїв */
+.component {
+    max-width: 375px;
+    padding: 0 16px;
+  }
+  
+  /* Стилі для планшетів */
+  @media (min-width: $breakpoint-tablet) {
+    .component {
+      max-width: 768px;
+      padding: 0 29px;
+    }
+  }
+  
+  /* Стилі для десктопів */
+  @media (min-width: $breakpoint-desktop) {
+    .component {
+      max-width: 1440px;
+      padding: 0 60px;
+    }
+  }
+  

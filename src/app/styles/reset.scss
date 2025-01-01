@@ -31,3 +31,16 @@ button, input, select, textarea {
     font-family: inherit;
     line-height: inherit;
 }
+
+/* Обнуление стилей кнопок */
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Обнуление стилей изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

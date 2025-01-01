@@ -14,14 +14,14 @@ const MainPage = () => {
   return (
     <div>
       <div> MainPage </div>
-      <div>
+      {/* <div>
         <h1>{t('welcome')}</h1>
         <p>{t('greeting', { name: 'John' })}</p>
         <div>
           <button onClick={() => handleLanguageChange('en')}>English</button>
           <button onClick={() => handleLanguageChange('es')}>Spanish</button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
