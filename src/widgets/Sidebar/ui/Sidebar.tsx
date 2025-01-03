@@ -6,17 +6,16 @@ import X from "sheared/assets/icons/x.svg"
 
 export interface SidebarProps {
 className?: string;
+isOpen?: boolean;
+onClose?: () => void
 }
 
-export const Sidebar = ({className}:SidebarProps)=>  {
-    const[collapsed, setCollapsed] = useState(false)
-
-    const toggle =()=>{
-        setCollapsed(prev=> !prev)
-    }
+export const Sidebar = ({className, isOpen, onClose}:SidebarProps)=>  {
+  
+    
   return (
-    <div className={classNames(cls.Sidebar, {[cls.collapsed]: collapsed}, [className])}>
-      <button onClick={toggle}><X /></button>
+    <div className={classNames(cls.Sidebar, {[cls.collapsed]: !isOpen}, [className])}>
+      <button onClick={onClose}><X /></button>
     </div>
   )
 };

@@ -7,16 +7,17 @@ import Burger from 'sheared/assets/icons/burger.svg'
 
 interface NavbarProps {
   className?: string;
+  onBurgerClick?: () => void
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = ({ className, onBurgerClick }: NavbarProps) => {
 
   const { t, i18n } = useTranslation();
 
   return (
     <header className={classNames(cl.Navbar, {}, [className])}>
       <Logo className={cl.Navbar__Logo} />
-      <Burger className={cl.Navbar__Burger} />
+      <Burger onClick={onBurgerClick} className={cl.Navbar__Burger} />
     </header>
   )
 }
