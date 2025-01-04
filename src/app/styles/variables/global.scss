@@ -1,15 +1,23 @@
 :root {
-    --font-family-main: "Roboto", serif;
-    --font-size-s: 14px;
-    --font-size-m: 16px;
-    --font-line-m: 24px;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-    --font-size-l: 24px;
-    --font-line-l: 32px;
-    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-    --navbar-height: 60px;
-    --sidebar-width: 300px;
-    --sidebar-width-collapsed: 60px;
+   --font-family-main: 'Roboto', serif;
+   --font-size-s: 14px;
+   --font-size-m: 16px;
+   --font-line-m: 24px;
+   --font-weight-normal: 400;
+   --font-weight-bold: 700;
+   --font-m: var(--font-size-m) / var(--font-line-m)
+      var(--font-family-main);
+   --font-size-l: 18px;
+   --font-line-l: 32px;
+   --font-l: var(--font-size-l) / var(--font-line-l)
+      var(--font-family-main);
+   --navbar-mobile-height: 88px;
+   --sidebar-width: 100%;
+
+   // Colors
+   --color-blue-dark: #0a224a;
+   --color-blue-light: #f7faff;
+   --color-light-grey: #d9d9d9;
+   --color-white: #fff;
+   --color-grey: #b6b6b6;
 }

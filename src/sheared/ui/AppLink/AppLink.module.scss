@@ -1,12 +1,32 @@
-.AppLink{
-    color: var(--primary-color);
-    margin-left: 1em;
+.AppLink {
+   color: var(--color-blue-dark);
+   font-weight: 400;
+   font-size: var(--font-size-m);
+   line-height: var(--font-line-m);
+   text-decoration: none;
 }
 
-.primary{
-    color: var(--primary-color);
+.sidebar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 8.5px;
+      font-size: var(--font-size-m);
 }
 
-.secondary{
-    color: var(--secondary-color);
+@media screen and (min-width: 768px) {
+   .sidebar{
+      font-size: 18px;
+   }
 }
+
+ .navbar{
+   font-size: 18px;
+ }
+
+ .navbar:not(:last-child) {
+      margin-right: 30px;
+     
+}
+

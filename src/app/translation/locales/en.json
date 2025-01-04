@@ -1,6 +1,6 @@
 {
-    "welcome": "Welcome to my app!",
-    "greeting": "Hello, {{name}}!",
-    "about": "About",
-    "home": "Home"
+   "welcome": "Welcome to my app!",
+   "greeting": "Hello, {{name}}!",
+   "about": "About",
+   "home": "Home"
 }

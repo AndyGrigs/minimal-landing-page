@@ -1,36 +1,43 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 16px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  
-    &__Logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: var(--navbar-mobile-height);
+   padding: 0 16px;
+   background-color: var(--color-blue-light);
+   border-bottom: 1px solid #ddd;
+
+   &__Logo {
       width: 100px;
       height: 14px;
-    }
-  
-    &__Burger {
+   }
+
+   &__Burger {
       width: 32px;
       height: 43px;
-    }
-  }
-  
-  /* Tablet and up */
-  @media (min-width: 768px) {
-    .Navbar {
-      padding: 24px;
-    }
-  }
-  
-  /* Desktop and up */
-  @media (min-width: 1024px) {
-    .Navbar {
-      padding: 32px;
-    }
-  
-    .Navbar__Burger {
+   }
+   &__Links {
       display: none;
-    }
-  }
+   }
+}
+
+.hidden {
+   display: none;
+}
+
+/* Tablet and up */
+
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+   .Navbar {
+    &__Links {
+         display: block;
+         margin-right: 60px;
+      }
+   }
+
+   .Navbar__Burger {
+      display: none;
+   }
+}
