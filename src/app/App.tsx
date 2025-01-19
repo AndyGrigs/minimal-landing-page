@@ -3,6 +3,7 @@ import { classNames } from 'sheared/lib/className';
 import { AppRouter } from './router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
+import { Hero } from 'widgets/Hero/Hero';
 
 const App = () => {
    const [isSidebarOpen, setIsSidebarOpen] =
@@ -23,6 +24,7 @@ const App = () => {
                isOpen={isSidebarOpen}
                onClose={toggleSidebar}
             />
+            <Hero/>
             {/* <AppRouter /> */}
          </div>
       </div>
