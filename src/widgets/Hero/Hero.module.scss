@@ -1,4 +1,9 @@
-.Hero{
+.Hero {
     max-width: 100% !important;
-    background-color: bisque;
-}
+    height: 400px;  // Set a height (adjust as needed)
+    background-image: url('/src/sheared/assets/images/hero-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
